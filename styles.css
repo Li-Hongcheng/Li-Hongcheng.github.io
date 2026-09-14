@@ -133,40 +133,6 @@ button { color: inherit; font: inherit; }
 .sectionHeading h2 { margin: 0; color: var(--primary); font: 700 25px/1.3 var(--font-serif), Georgia, serif; }
 .sectionHeading > span { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .sectionNote { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
-.timeline article { display: grid; grid-template-columns: 155px 1fr; gap: 20px; padding: 17px 0; }
-.timeline article + article { border-top: 1px dashed var(--border); }
-.timeline .time { color: var(--accent); font: 700 12px/1.6 var(--font-sans), sans-serif; }
-.timeline h3 { margin: 0; color: var(--primary); font: 700 16px var(--font-serif), Georgia, serif; }
-.timeline p { margin: 3px 0 0; color: var(--muted); font-size: 13px; }
-.newsList { display: grid; }
-.newsItem { display: grid; grid-template-columns: 65px 1fr; gap: 18px; padding: 11px 0; }
-.newsItem time { color: var(--accent); font: 700 12px var(--font-sans), sans-serif; }
-.newsItem p { margin: 0; font-size: 13px; line-height: 1.65; }
-
-.resumeList { display: grid; gap: 16px; }
-.resumeItem {
-  display: grid;
-  grid-template-columns: 74px minmax(0, 1fr);
-  gap: 22px;
-  padding: 22px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-  box-shadow: 0 5px 18px rgba(33, 38, 37, .035);
-}
-.resumeMark {
-  width: 62px;
-  height: 62px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--surface-soft);
-  color: var(--accent);
-  font: 700 13px var(--font-serif), Georgia, serif;
-}
-.resumeBody h3 { margin: 0 0 5px; color: var(--primary); font: 700 17px/1.5 var(--font-serif), Georgia, serif; }
-.resumeBody p { margin: 3px 0; color: var(--text); font-size: 12px; line-height: 1.7; }
-.resumeBody time { display: block; margin-top: 9px; color: var(--muted); font-size: 11px; font-weight: 600; }
 
 .publication { padding: 24px 0; }
 .publication + .publication { border-top: 1px dashed var(--border); }
@@ -180,11 +146,10 @@ button { color: inherit; font: inherit; }
 .pubLinks { display: flex; gap: 14px; margin-top: 9px; }
 .pubLinks a { color: var(--accent); font-size: 11px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 
-.awardGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; }
-.awardGrid article { min-height: 145px; padding: 19px; border: 1px solid var(--border); border-radius: 11px; background: var(--surface); box-shadow: 0 5px 18px rgba(33, 38, 37, .035); }
-.awardGrid span { color: var(--accent); font: 700 10px var(--font-sans), sans-serif; }
-.awardGrid h3 { margin: 18px 0 6px; color: var(--primary); font: 700 15px/1.55 var(--font-serif), Georgia, serif; }
-.awardGrid p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.awardList { margin: 0; padding: 0; list-style: none; }
+.awardList li { position: relative; padding: 12px 0 12px 22px; color: var(--text); font-size: 14px; }
+.awardList li + li { border-top: 1px dashed var(--border); }
+.awardList li::before { content: "•"; position: absolute; left: 2px; color: var(--accent); font-weight: 800; }
 
 footer { border-top: 1px solid var(--border); background: var(--surface); padding: 28px max(20px, calc((100% - 1120px) / 2)); display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 11px; }
 footer p { margin: 0; }
@@ -207,9 +172,6 @@ footer a { color: var(--accent); font-weight: 700; }
   .sidebar { grid-template-columns: 1fr; }
   .contentSection { padding: 31px 0 37px; }
   .sectionHeading { align-items: flex-start; flex-direction: column; gap: 4px; }
-  .timeline article { grid-template-columns: 1fr; gap: 5px; }
-  .resumeItem { grid-template-columns: 1fr; gap: 12px; }
-  .awardGrid { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
 }
 
