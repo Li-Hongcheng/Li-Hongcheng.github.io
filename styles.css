@@ -99,16 +99,18 @@ button { color: inherit; font: inherit; }
   box-shadow: var(--shadow);
 }
 .avatar {
-  width: 158px;
-  height: 158px;
+  width: 190px;
+  height: auto;
+  aspect-ratio: 3 / 4;
   display: block;
   margin: 0 auto 20px;
-  object-fit: cover;
-  border-radius: 50%;
+  object-fit: contain;
+  border-radius: 8px;
   box-shadow: 0 8px 20px rgba(34, 39, 38, .15);
 }
 .profilePanel h1 { margin: 0; color: var(--primary); font: 700 30px/1.35 var(--font-serif), Georgia, serif; letter-spacing: .04em; }
-.role { max-width: 220px; margin: 4px auto 20px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.chineseName { margin: 1px 0 0; color: var(--primary); font: 600 18px/1.45 var(--font-serif), "Songti SC", serif; letter-spacing: .14em; }
+.role { max-width: 220px; margin: 5px auto 20px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .profileDetails { padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: left; }
 .profileDetails p { display: grid; grid-template-columns: 18px 1fr; gap: 8px; margin: 7px 0; font-size: 12px; line-height: 1.65; }
 .profileDetails span { color: var(--accent); }
