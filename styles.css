@@ -101,7 +101,7 @@ button { color: inherit; font: inherit; }
 .avatar {
   width: 190px;
   height: auto;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1289 / 1616;
   display: block;
   margin: 0 auto 20px;
   object-fit: contain;
